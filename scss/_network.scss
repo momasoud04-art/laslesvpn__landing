@@ -1,0 +1,70 @@
+.network {
+  padding-top: 100px;
+  padding-bottom: 80px;
+
+  &__map {
+    width: 100%;
+    max-width: 880px;
+    margin: 56px auto 40px;
+  }
+
+  @media (max-width: $bp-tablet) {
+    padding-top: 70px;
+    padding-bottom: 56px;
+
+    &__map {
+      margin-top: 36px;
+    }
+  }
+}
+
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px 56px;
+  margin-top: 56px;
+}
+
+.partner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  color: #DCDCE1;
+
+  &--netflix {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+
+  &--amazon {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  &--discord {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  &--spotify {
+    font-weight: 500;
+  }
+
+  @media (max-width: $bp-mobile) {
+    font-size: 20px;
+
+    &--netflix,
+    &--amazon {
+      font-size: 22px;
+    }
+
+    &--discord {
+      font-size: 16px;
+    }
+  }
+}
